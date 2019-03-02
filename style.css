@@ -8,6 +8,47 @@ Template: twentyseventeen
 Version: 1.0.0
 */
 
+/*removes wordpress message in footer  */
 .site-info {
 	display: none;
+}
+
+
+/* footer css */
+#nav_menu-2 {
+  float: right;
+}
+
+#custom_html-3 p {
+  margin-bottom: 0;
+}
+
+
+body {
+  color: #3f6844;
+}
+
+.site-main {
+  background: #fffce1;
+}
+
+.navigation-top {
+  background: #3f6844;
+}
+
+.site-title a, .site-description {
+  color: #fffce1 !important;
+}
+
+/* body.has-header-image .site-description,
+body.has-header-video .site-description {
+  color: #fffce1 !important;
+} */
+
+.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+  color: #fffce1;
+}
+
+.page .panel-content .entry-title {
+  color: #3f6844;
 }
