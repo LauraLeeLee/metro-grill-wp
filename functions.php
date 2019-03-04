@@ -7,7 +7,6 @@ function enqueue_parent_styles() {
 }
 
 
-
 /* Custom Post Type Start */
 function create_posttype() {
 register_post_type( 'specials',
@@ -23,6 +22,7 @@ array(
  )
 );
 }
+
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
 
