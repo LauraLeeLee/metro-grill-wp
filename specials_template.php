@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Specials*/
+/*Template Name: Specials */
 get_header();
 query_posts(array(
    'post_type' => 'specials'
