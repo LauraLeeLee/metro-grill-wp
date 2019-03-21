@@ -8,22 +8,6 @@ Template: twentyseventeen
 Version: 1.0.0
 */
 
-/*removes wordpress message in footer  */
-.site-info {
-	display: none;
-}
-
-
-/* footer css */
-#nav_menu-2 {
-  float: right;
-}
-
-#custom_html-3 p {
-  margin-bottom: 0;
-}
-
-
 body {
   color: #3f6844;
 }
@@ -51,4 +35,105 @@ body.has-header-video .site-description {
 
 .page .panel-content .entry-title {
   color: #3f6844;
+}
+
+
+/* menu items */
+.menu-section {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-item{
+	margin-bottom: 15px;
+}
+
+.item-title {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.item-price {
+	display: inline-block;
+	float: right;
+}
+
+/* footer css */
+
+/*removes wordpress message in footer  */
+.site-info {
+	display: none;
+}
+
+/* Decrease Footer Height */
+.site-footer {
+		max-height: 25vh;
+		margin-top: 0;
+    /* padding-bottom: 0.5em;
+    padding-top: 0.5em; */
+}
+
+.widget-area {
+	width: 	100vw;
+	height: 25vh;
+	margin-top: -50px;
+}
+.widget-column footer-widget-1 {
+	height: 25vh;
+}
+
+#custom_html-3 {
+	float: left;
+	margin-left: 100px;
+}
+
+#nav_menu-2 {
+  float: right;
+	margin-right: 90px;
+	width: 30vw;
+  height: 25vh;
+}
+
+#custom_html-3 p {
+  margin-bottom: 0;
+}
+
+#nav_menu-2 .widget-title {
+	margin: 5px;
+}
+
+#menu-my-pages {
+	-moz-column-count: 2;
+	 -moz-column-gap: 25px;
+	 -webkit-column-count: 2;
+	 -webkit-column-gap: 25px;
+	 column-count: 2;
+	 column-gap: 25px;
+	 width: 227px;
+	 font-size: 0.90em;
+}
+
+#menu-my-pages .menu-item {
+	padding: 3px;
+	margin: 0;
+}
+
+
+======================================
+/* Media Queries  */
+
+@media screen and (max-width: 767px) {
+	.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+		color: #3f6844;
+	}
+
+}
+
+@media screen and (min-width: 48em) {
+
+	.site-footer .widget-column.footer-widget-1 {
+		width: 90vw;
+	}
+
 }
