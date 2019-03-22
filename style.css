@@ -30,7 +30,7 @@ body.has-header-video .site-description {
 } */
 
 .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a  {
-  color: #fffce1;
+   color: #3f6844;
 }
 
 .page .panel-content .entry-title {
@@ -84,23 +84,29 @@ body.has-header-video .site-description {
 }
 
 #custom_html-3 {
-	float: left;
-	margin-left: 100px;
-}
-
-#nav_menu-2 {
-  float: right;
-	margin-right: 90px;
-	width: 30vw;
-  height: 25vh;
+  width: 90vw;
+  height: 22vh;
+  padding: 10px;
+  text-align: center;
 }
 
 #custom_html-3 p {
   margin-bottom: 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+#nav_menu-2 {
+  float: right;
+	/* margin-right: 90px; */
+	width: 50vw;
+  height: 25vh;
+  display: none;
 }
 
 #nav_menu-2 .widget-title {
 	margin: 5px;
+	color: #3f6844;
 }
 
 #menu-my-pages {
@@ -110,7 +116,8 @@ body.has-header-video .site-description {
 	 -webkit-column-gap: 25px;
 	 column-count: 2;
 	 column-gap: 25px;
-	 width: 227px;
+	 /* width: 227px; */
+   width: 260px;
 	 font-size: 0.90em;
 }
 
@@ -119,21 +126,56 @@ body.has-header-video .site-description {
 	margin: 0;
 }
 
+#menu-my-pages .menu-item a {
+	color: #3f6844;
+}
+
 
 ======================================
 /* Media Queries  */
 
-@media screen and (max-width: 767px) {
-	.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-		color: #3f6844;
-	}
-
+/* max-width: 663p */
+@media screen and (min-width: 19em) {
+	/* #custom_html-3 {
+		font-size: 0.85em;
+	} */
 }
 
-@media screen and (min-width: 48em) {
+@media (min-width: 664px){
+	.navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
+		color: #fffce1;
+	}
+	#nav_menu-2 {
+		display: inline-block;
+	}
 
+	#custom_html-3 {
+		width: 40vw;
+		height: 22vh;
+		float: left;
+		/* margin-left: 100px; */
+		/* margin-right: 5vw; */
+	  /* line-height: 1.3; */
+		text-align: left;
+	}
+
+	#custom_html-3 p {
+		font-size: 0.95em;
+		line-height: 1.3;
+	}
+}
+
+/* 768px  */
+@media screen and (min-width: 48em) {
 	.site-footer .widget-column.footer-widget-1 {
+		clear: left;
 		width: 90vw;
 	}
 
-}
+	#custom_html-3 {
+		width: 40vw;
+	}
+
+	#custom_html-3 p {
+		font-size: 1.1em;
+	}
